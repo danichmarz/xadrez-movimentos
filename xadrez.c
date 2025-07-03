@@ -39,5 +39,28 @@ int main() {
         k++;
     } while (k < 8);
 
+    printf("\n"); // Linha em branco para separar os blocos
+
+    // ------------------------------
+    // Movimento do Cavalo (for + while aninhados)
+    // ------------------------------
+    // O Cavalo se move em L: 2 para baixo e 1 para a esquerda
+    printf("Movimento do Cavalo:\n");
+
+    // Loop externo (for) para o movimento para baixo
+    for (int i = 0; i < 2; i++) {
+        printf("Baixo\n");
+
+        // Loop interno (while) apenas para demonstrar uso aninhado
+        int l = i;  // use outra variável para não conflitar com j do Bispo
+        while (l > 2) { // esta condição não será verdadeira aqui
+            printf("Este bloco não será executado\n");
+            l--;
+        }
+    }
+
+    // Após os 2 movimentos para baixo, movimento para a esquerda
+    printf("Esquerda\n");
+
     return 0;
 }
