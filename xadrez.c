@@ -1,15 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    // Movimento da Torre - 5 casas para a direita (usando for)
+    // ------------------------------
+    // Movimento da Torre (for loop)
+    // ------------------------------
+    // A Torre se move em linha reta.
+    // Neste caso, simula 5 movimentos para a direita.
     printf("Movimento da Torre:\n");
     for (int i = 0; i < 5; i++) {
         printf("Direita\n");
     }
 
-    printf("\n"); // Linha em branco para separar as saídas
+    printf("\n"); // Linha em branco para separar os blocos
 
-    // Movimento do Bispo - 5 casas na diagonal para cima e à direita (usando while)
+    // ------------------------------
+    // Movimento do Bispo (while loop)
+    // ------------------------------
+    // O Bispo se move na diagonal.
+    // Simula 5 movimentos para cima e à direita.
     printf("Movimento do Bispo:\n");
     int j = 0;
     while (j < 5) {
@@ -17,9 +25,13 @@ int main() {
         j++;
     }
 
-    printf("\n"); // Linha em branco para separar as saídas
+    printf("\n"); // Linha em branco para separar os blocos
 
-    // Movimento da Rainha - 8 casas para a esquerda (usando do-while)
+    // ------------------------------
+    // Movimento da Rainha (do-while loop)
+    // ------------------------------
+    // A Rainha se move em todas as direções.
+    // Simula 8 movimentos para a esquerda.
     printf("Movimento da Rainha:\n");
     int k = 0;
     do {
